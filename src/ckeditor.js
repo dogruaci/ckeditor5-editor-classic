@@ -33,6 +33,7 @@ import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices'
 
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import Upload from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -63,7 +64,8 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	Font,
-	Upload
+	Upload,
+	Alignment
 ];
 
 // Editor configuration.
@@ -72,6 +74,7 @@ ClassicEditor.defaultConfig = {
 		items: [
 			'heading',
 			'|',
+			'alignment',
 			'fontsize',
 			'bold',
 			'italic',

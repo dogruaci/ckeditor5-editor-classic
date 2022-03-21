@@ -1,4 +1,5 @@
-CKEditor 5 classic editor build Added ImageUpload and Font Plugins
+CKEditor 5 classic editor build 
+ImageUpload & Font & Alignment Plugins Added
 ========================================
 
 [![npm version](https://badge.fury.io/js/%40ckeditor%2Fckeditor5-build-classic.svg)](https://www.npmjs.com/package/@ckeditor/ckeditor5-build-classic)
