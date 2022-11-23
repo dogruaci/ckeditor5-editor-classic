@@ -30,10 +30,10 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
-
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import Upload from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -65,7 +65,8 @@ ClassicEditor.builtinPlugins = [
 	TextTransformation,
 	Font,
 	Upload,
-	Alignment
+	Alignment,
+	HtmlEmbed
 ];
 
 // Editor configuration.
@@ -90,7 +91,8 @@ ClassicEditor.defaultConfig = {
 			'insertTable',
 			'mediaEmbed',
 			'undo',
-			'redo'
+			'redo',
+			'htmlEmbed',
 		]
 	},
 	fontSize: {
